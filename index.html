@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/date.css" />
+		<script src="js/date-1.0.1.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			#date {
+				margin-left: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id='date'>
+			<input type="text" value='' placeholder="点击选择时间" id='inputdate' />
+		</div>
+
+		<script type="text/javascript">
+			var d = new DateJs({
+				inputEl: '#inputdate',
+				el: '#date',
+			})
+			console.log(d)
+		</script>
+	</body>
+</html>
